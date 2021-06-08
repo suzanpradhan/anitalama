@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Sacramento';
+  src: url("fonts/SACRAMENTO-REGULAR.TTF");
+}
+
+@font-face {
+  font-family: 'Ananda Akchyar';
+  src: url("fonts/ANANDA-AKCHYAR-BOLD.ttf");
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url("fonts/GILROY-LIGHT.OTF");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F0F3;
+}
+
+.scaffold {
+  position: relative;
+}
+
+.scaffold > .appbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 32px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.scaffold > .appbar > .leading > .title {
+  font-size: 16;
+  font-family: "Sacramento";
+  color: #fff;
+}
+
+.scaffold > .appbar > .actions > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scaffold > .appbar > .actions > ul > li {
+  padding: 12px;
+  list-style-type: none;
+}
+
+.scaffold > .appbar > .actions > ul > li > a {
+  text-decoration: none;
+  font-family: "Ananda Akchyar";
+  color: #bfbfbf;
+  font-size: 24px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.scaffold > .appbar > .actions > ul > li > a.active {
+  color: #fff;
+}
+
+.scaffold > .appbar > .actions > ul > li > a:hover {
+  color: #fff;
+}
+
+.scaffold > .body > .main-header-slider-section {
+  width: 100%;
+}
+
+.scaffold > .body > .main-header-slider-section > .container .main-header-slider li img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section {
+  padding: 32px 32px;
+  height: 1000px;
+}
+
+.scaffold > .body > .news-section > .container > .header, .scaffold > .body .sanbodhan-section > .container > .header, .scaffold > .body .third-section > .container > .header {
+  margin: 32px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scaffold > .body > .news-section > .container > .header > .title, .scaffold > .body .sanbodhan-section > .container > .header > .title, .scaffold > .body .third-section > .container > .header > .title {
+  font-family: "GilroyLight";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scaffold > .body > .news-section > .container > .header > .subTitle, .scaffold > .body .sanbodhan-section > .container > .header > .subTitle, .scaffold > .body .third-section > .container > .header > .subTitle {
+  font-size: 16px;
+  color: #707070;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news, .scaffold > .body .sanbodhan-section > .container > .featured-news, .scaffold > .body .third-section > .container > .featured-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row, .scaffold > .body .third-section > .container > .featured-news > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card {
+  overflow: hidden;
+  margin: 14px 14px;
+  background-color: white;
+  -webkit-box-shadow: 1px 5px 10px #bfbfbf;
+          box-shadow: 1px 5px 10px #bfbfbf;
+  width: 50%;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 200px;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > h1 {
+  margin: 20px 16px 10px 16px;
+  font-style: normal;
+  font-family: "GilroyLight";
+  font-size: 18px;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > p {
+  height: 100px;
+  margin: 10px 16px 20px 16px;
+  overflow: hidden;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  font-family: "GilroyLight";
+  font-size: 14px;
+}
+/*# sourceMappingURL=main.css.map */

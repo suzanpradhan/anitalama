@@ -1,0 +1,156 @@
+// CUSTOM RESOURCES
+
+@font-face {
+    font-family: 'Sacramento'; 
+    src: url('fonts/SACRAMENTO-REGULAR.TTF'); 
+
+}
+
+@font-face {
+    font-family: 'Ananda Akchyar'; 
+    src: url('fonts/ANANDA-AKCHYAR-BOLD.ttf'); 
+}
+
+@font-face {
+    font-family: 'GilroyLight'; 
+    src: url('fonts/GILROY-LIGHT.OTF'); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F0F3;
+}
+
+.scaffold{
+    position: relative;
+    & > .appbar{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        background: linear-gradient(rgba($color: #000, $alpha: 0.8), rgba($color: #000000, $alpha: 0));
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        padding: 0px 32px;
+        transition: 300ms;
+
+        & > .leading{
+            & > .title{
+                font-size: 16;
+        font-family: "Sacramento";
+        color: #fff;
+            }
+        }
+
+        & > .actions{
+            > ul{
+                display: flex;
+                > li{
+                    padding: 12px;
+                    list-style-type: none;
+                    > a{
+                        text-decoration: none;
+                        font-family: "Ananda Akchyar";
+                        color: #bfbfbf;
+                        font-size: 24px;
+                        transition: 300ms;
+
+                        &.active{
+                            color: #fff;
+                        }
+
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & > .body{
+        & > .main-header-slider-section{
+            width: 100%;
+            & > .container{
+                .main-header-slider{
+                     li{
+                        img{
+                            width: 100%;
+                            height: 100vh;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                
+                }
+            }
+        }
+
+        & > .news-section, .sanbodhan-section, .third-section{
+            padding: 32px 32px;
+            height: 1000px;
+            & > .container{
+                & > .header{
+                    margin: 32px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & > .title{
+                        font-family: "GilroyLight";
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    & > .subTitle{
+                        font-size: 16px;
+                        color: #707070;
+                    }
+                }
+                & > .featured-news{
+                    display: flex;
+                    flex-direction: column;
+                    & > .row{
+                        display: flex;
+                        flex-direction: row;
+                        & > .news-card{
+                            
+                            overflow: hidden;
+                            margin: 14px 14px;
+                            background-color: white;
+                            box-shadow: 1px 5px 10px #bfbfbf;
+                            width: 50%;
+                            & > img{
+                                width: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                height: 200px;
+                            }
+                            & > h1{
+                                margin: 20px 16px 10px 16px;
+                                font-style: normal;
+                                font-family: "GilroyLight";
+                                font-size: 18px;
+                            }
+                            & > p{
+                                height: 100px;
+                                margin: 10px 16px 20px 16px;
+                                overflow: hidden;
+                                line-height: 24px;
+                                text-overflow: ellipsis;
+                                font-family: "GilroyLight";
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
