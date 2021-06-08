@@ -552,9 +552,6 @@ body {
 }
 
 @media screen and (max-width: 740px) {
-  .scaffold > .appbar > .leading > .title > h1 {
-    font-size: 20px;
-  }
   .scaffold > .appbar > .actions > ul {
     overflow-x: scroll;
     overflow-y: hidden;

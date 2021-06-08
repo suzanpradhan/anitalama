@@ -419,13 +419,13 @@ body{
 @media screen and (max-width: 740px) {
     .scaffold{
         & > .appbar{
-            & > .leading{
-                & > .title{
-                    > h1{
-                        font-size: 20px;
-                    }
-                }
-            }
+            // & > .leading{
+            //     & > .title{
+            //         > h1{
+            //             font-size: 20px;
+            //         }
+            //     }
+            // }
             & > .actions{
                 // display: none;
                 & > ul{
