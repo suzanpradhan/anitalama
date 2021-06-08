@@ -13,6 +13,21 @@
   src: url("fonts/GILROY-LIGHT.OTF");
 }
 
+@font-face {
+  font-family: 'PoppinsLight';
+  src: url("fonts/POPPINS-LIGHT.TTF");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("fonts/POPPINS-REGULAR.TTF");
+}
+
+@font-face {
+  font-family: 'PoppinsMedium';
+  src: url("fonts/POPPINS-MEDIUM.TTF");
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -97,12 +112,11 @@ body {
      object-position: center;
 }
 
-.scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section {
+.scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section, .scaffold > .body .sansad-section {
   padding: 32px 32px;
-  height: 1000px;
 }
 
-.scaffold > .body > .news-section > .container > .header, .scaffold > .body .sanbodhan-section > .container > .header, .scaffold > .body .third-section > .container > .header {
+.scaffold > .body > .news-section > .container > .header, .scaffold > .body .sanbodhan-section > .container > .header, .scaffold > .body .third-section > .container > .header, .scaffold > .body .sansad-section > .container > .header {
   margin: 32px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,18 +133,18 @@ body {
           align-items: center;
 }
 
-.scaffold > .body > .news-section > .container > .header > .title, .scaffold > .body .sanbodhan-section > .container > .header > .title, .scaffold > .body .third-section > .container > .header > .title {
-  font-family: "GilroyLight";
+.scaffold > .body > .news-section > .container > .header > .title, .scaffold > .body .sanbodhan-section > .container > .header > .title, .scaffold > .body .third-section > .container > .header > .title, .scaffold > .body .sansad-section > .container > .header > .title {
+  font-family: "Poppins";
   font-size: 18px;
   font-weight: bold;
 }
 
-.scaffold > .body > .news-section > .container > .header > .subTitle, .scaffold > .body .sanbodhan-section > .container > .header > .subTitle, .scaffold > .body .third-section > .container > .header > .subTitle {
+.scaffold > .body > .news-section > .container > .header > .subTitle, .scaffold > .body .sanbodhan-section > .container > .header > .subTitle, .scaffold > .body .third-section > .container > .header > .subTitle, .scaffold > .body .sansad-section > .container > .header > .subTitle {
   font-size: 16px;
   color: #707070;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news, .scaffold > .body .sanbodhan-section > .container > .featured-news, .scaffold > .body .third-section > .container > .featured-news {
+.scaffold > .body > .news-section > .container > .featured-news, .scaffold > .body .sanbodhan-section > .container > .featured-news, .scaffold > .body .third-section > .container > .featured-news, .scaffold > .body .sansad-section > .container > .featured-news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +154,7 @@ body {
           flex-direction: column;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row, .scaffold > .body .third-section > .container > .featured-news > .row {
+.scaffold > .body > .news-section > .container > .featured-news > .row, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row, .scaffold > .body .third-section > .container > .featured-news > .row, .scaffold > .body .sansad-section > .container > .featured-news > .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,32 +164,40 @@ body {
           flex-direction: row;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card {
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card {
+  cursor: pointer;
   overflow: hidden;
   margin: 14px 14px;
   background-color: white;
-  -webkit-box-shadow: 1px 5px 10px #bfbfbf;
-          box-shadow: 1px 5px 10px #bfbfbf;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-box-shadow: 1px 3px 10px #d6d6d6;
+          box-shadow: 1px 3px 10px #d6d6d6;
   width: 50%;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > img {
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card:hover {
+  -webkit-box-shadow: 5px 5px 20px #d6d6d6;
+          box-shadow: 5px 5px 20px #d6d6d6;
+}
+
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 200px;
+  height: 280px;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > h1 {
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > h1 {
   margin: 20px 16px 10px 16px;
   font-style: normal;
   font-family: "GilroyLight";
   font-size: 18px;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > p {
+.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > p {
   height: 100px;
   margin: 10px 16px 20px 16px;
   overflow: hidden;
@@ -183,5 +205,336 @@ body {
   text-overflow: ellipsis;
   font-family: "GilroyLight";
   font-size: 14px;
+}
+
+.scaffold > .body > .sanbodhan-section {
+  background-color: white;
+}
+
+.scaffold > .body > .thought-section {
+  background-color: white;
+  padding: 32px 32px;
+}
+
+.scaffold > .body > .thought-section > .container > .header {
+  margin: 32px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scaffold > .body > .thought-section > .container > .header > .title {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scaffold > .body > .thought-section > .container > .header > .subTitle {
+  font-size: 16px;
+  color: #707070;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card {
+  cursor: pointer;
+  overflow: hidden;
+  margin: 14px 14px;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-box-shadow: 1px 3px 10px #d6d6d6;
+          box-shadow: 1px 3px 10px #d6d6d6;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card:hover {
+  -webkit-box-shadow: 5px 5px 20px #d6d6d6;
+          box-shadow: 5px 5px 20px #d6d6d6;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 280px;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > h1 {
+  margin: 20px 16px 10px 16px;
+  font-style: normal;
+  font-family: "GilroyLight";
+  font-size: 18px;
+}
+
+.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > p {
+  height: 150px;
+  margin: 10px 16px 20px 16px;
+  overflow: hidden;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  font-family: "GilroyLight";
+  font-size: 14px;
+}
+
+.scaffold > .body > .newspaper-section {
+  background-color: white;
+  padding: 32px 32px;
+}
+
+.scaffold > .body > .newspaper-section > .container > .header {
+  margin: 32px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scaffold > .body > .newspaper-section > .container > .header > .title {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.scaffold > .body > .newspaper-section > .container > .header > .subTitle {
+  font-size: 16px;
+  color: #707070;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card {
+  cursor: pointer;
+  overflow: hidden;
+  margin: 14px 14px;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-box-shadow: 1px 3px 10px #d6d6d6;
+          box-shadow: 1px 3px 10px #d6d6d6;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card:hover {
+  -webkit-box-shadow: 5px 5px 20px #d6d6d6;
+          box-shadow: 5px 5px 20px #d6d6d6;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 280px;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > h1 {
+  margin: 20px 16px 10px 16px;
+  font-style: normal;
+  font-family: "GilroyLight";
+  font-size: 18px;
+}
+
+.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > p {
+  height: 150px;
+  margin: 10px 16px 20px 16px;
+  overflow: hidden;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  font-family: "GilroyLight";
+  font-size: 14px;
+}
+
+.scaffold > .body > .footer-navigation-section {
+  background-color: #0d0d0d;
+  padding: 32px 32px;
+}
+
+.scaffold > .body > .footer-navigation-section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scaffold > .body > .footer-navigation-section > .container > .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scaffold > .body > .footer-navigation-section > .container > .footer-navigation > .title {
+  padding: 8px 0px;
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins";
+}
+
+.scaffold > .body > .footer-navigation-section > .container > .footer-navigation > a {
+  text-decoration: none;
+  color: #707070;
+  font-family: "PoppinsLight";
+  font-size: 15px;
+}
+
+.scaffold > .body > .footer-navigation-section > .container > .footer-navigation > a:hover {
+  color: white;
+}
+
+.scaffold > .body > .footer-social-section {
+  padding: 32px 32px;
+}
+
+.scaffold > .body > .footer-social-section > .container > .social-medias-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scaffold > .body > .footer-social-section > .container > .social-medias-icons > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 10px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.scaffold > .body > .footer-social-section > .container > .social-medias-icons > a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.scaffold > .body > .footer-social-section > .container > .copyright {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scaffold > .body > .footer-social-section > .container > .copyright > p {
+  text-align: center;
+  font-family: "GilroyLight";
+  color: #707070;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 740px) {
+  .scaffold > .appbar > .leading > .title > h1 {
+    font-size: 20px;
+  }
+  .scaffold > .appbar > .actions {
+    display: none;
+  }
+  .scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section, .scaffold > .body .sansad-section {
+    padding: 32px 10px;
+  }
+  .scaffold > .body > .news-section > .container > .featured-news > .row, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row, .scaffold > .body .third-section > .container > .featured-news > .row, .scaffold > .body .sansad-section > .container > .featured-news > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .scaffold > .body > .news-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card {
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .scaffold > .body > .thought-section {
+    padding: 32px 10px;
+  }
+  .scaffold > .body > .thought-section > .container > .featured-thought {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .scaffold > .body > .newspaper-section {
+    padding: 32px 10px;
+  }
+  .scaffold > .body > .newspaper-section > .container > .featured-newspaper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .scaffold > .body > .footer-navigation-section > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .scaffold > .body > .footer-navigation-section > .container > .footer-navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

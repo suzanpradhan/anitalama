@@ -16,6 +16,21 @@
     src: url('fonts/GILROY-LIGHT.OTF'); 
 }
 
+@font-face {
+    font-family: 'PoppinsLight'; 
+    src: url('fonts/POPPINS-LIGHT.TTF'); 
+}
+
+@font-face {
+    font-family: 'Poppins'; 
+    src: url('fonts/POPPINS-REGULAR.TTF'); 
+}
+
+@font-face {
+    font-family: 'PoppinsMedium'; 
+    src: url('fonts/POPPINS-MEDIUM.TTF'); 
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -92,9 +107,9 @@ body{
             }
         }
 
-        & > .news-section, .sanbodhan-section, .third-section{
+        & > .news-section, .sanbodhan-section, .third-section, .sansad-section{
             padding: 32px 32px;
-            height: 1000px;
+            // height: 1000px;
             & > .container{
                 & > .header{
                     margin: 32px 0px;
@@ -103,7 +118,7 @@ body{
                     justify-content: center;
                     align-items: center;
                     & > .title{
-                        font-family: "GilroyLight";
+                        font-family: "Poppins";
                         font-size: 18px;
                         font-weight: bold;
                     }
@@ -119,17 +134,22 @@ body{
                         display: flex;
                         flex-direction: row;
                         & > .news-card{
-                            
+                            cursor: pointer;
                             overflow: hidden;
                             margin: 14px 14px;
                             background-color: white;
-                            box-shadow: 1px 5px 10px #bfbfbf;
+                            transition: 300ms;
+                            box-shadow: 1px 3px 10px #d6d6d6;
                             width: 50%;
+
+                            &:hover{
+                                box-shadow: 5px 5px 20px #d6d6d6;
+                            }
                             & > img{
                                 width: 100%;
                                 object-fit: cover;
                                 object-position: center;
-                                height: 200px;
+                                height: 280px;
                             }
                             & > h1{
                                 margin: 20px 16px 10px 16px;
@@ -151,6 +171,257 @@ body{
                 }
             }
         }
+
+        & > .sanbodhan-section{
+            background-color: white;
+        }
+
+        & > .thought-section{
+            background-color: white;
+            padding: 32px 32px;
+            & > .container{
+                & > .header{
+                    margin: 32px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & > .title{
+                        font-family: "Poppins";
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    & > .subTitle{
+                        font-size: 16px;
+                        color: #707070;
+                    }
+                }
+                & > .featured-thought{
+                    display: flex;
+                    flex-direction: row;
+                    & > .thought-card{
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin: 14px 14px;
+                        background-color: white;
+                        flex: 1;
+                        transition: 300ms;
+                        box-shadow: 1px 3px 10px #d6d6d6;
+
+                        &:hover{
+                            box-shadow: 5px 5px 20px #d6d6d6;
+                        }
+                        & > img{
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            height: 280px;
+                        }
+                        & > h1{
+                            margin: 20px 16px 10px 16px;
+                            font-style: normal;
+                            font-family: "GilroyLight";
+                            font-size: 18px;
+                        }
+                        & > p{
+                            height: 150px;
+                            margin: 10px 16px 20px 16px;
+                            overflow: hidden;
+                            line-height: 24px;
+                            text-overflow: ellipsis;
+                            font-family: "GilroyLight";
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .newspaper-section{
+            background-color: white;
+            padding: 32px 32px;
+            & > .container{
+                & > .header{
+                    margin: 32px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & > .title{
+                        font-family: "Poppins";
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    & > .subTitle{
+                        font-size: 16px;
+                        color: #707070;
+                    }
+                }
+                & > .featured-newspaper{
+                    display: flex;
+                    flex-direction: row;
+                    & > .newspaper-card{
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin: 14px 14px;
+                        background-color: white;
+                        flex: 1;
+                        transition: 300ms;
+                        box-shadow: 1px 3px 10px #d6d6d6;
+
+                        &:hover{
+                            box-shadow: 5px 5px 20px #d6d6d6;
+                        }
+                        & > img{
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            height: 280px;
+                        }
+                        & > h1{
+                            margin: 20px 16px 10px 16px;
+                            font-style: normal;
+                            font-family: "GilroyLight";
+                            font-size: 18px;
+                        }
+                        & > p{
+                            height: 150px;
+                            margin: 10px 16px 20px 16px;
+                            overflow: hidden;
+                            line-height: 24px;
+                            text-overflow: ellipsis;
+                            font-family: "GilroyLight";
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .footer-navigation-section{
+            background-color: #0d0d0d;
+            padding: 32px 32px;
+            & > .container{
+                display: flex;
+                justify-content: space-around;
+
+                & > .footer-navigation{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    & > .title{
+                        padding: 8px 0px;
+                        font-size: 18px;
+                        color: white;
+                        font-family: "Poppins";
+                    }
+                    & > a{
+                        text-decoration: none;
+                        color: #707070;
+                        font-family: "PoppinsLight";
+                        font-size: 15px;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .footer-social-section{
+            padding: 32px 32px;
+            & > .container{
+                & > .social-medias-icons{
+                    display: flex;
+                    justify-content: center;
+                    & > a{
+                        display: flex;
+                        padding: 0px 10px;
+                        transition: 400ms;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                        
+                    }
+                }
+                & > .copyright{
+                    margin-top: 14px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & > p{
+                        text-align: center;
+                        font-family: "GilroyLight";
+                        color: #707070;
+                        font-size: 14px;
+                    }
+
+                }
+            }
+            
+        }
     }
 }
 
+@media screen and (max-width: 740px) {
+    .scaffold{
+        & > .appbar{
+            & > .leading{
+                & > .title{
+                    > h1{
+                        font-size: 20px;
+                    }
+                }
+            }
+            & > .actions{
+                display: none;
+            }
+        }
+        & > .body{
+            & > .news-section, .sanbodhan-section, .third-section, .sansad-section{
+                padding: 32px 10px;
+                & > .container{
+                    & > .featured-news{
+                        & > .row{
+                            flex-direction: column;
+                            & > .news-card{
+                                width: auto;
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .thought-section{
+                padding: 32px 10px;
+                & > .container{
+                    & > .featured-thought{
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            & > .newspaper-section{
+                padding: 32px 10px;
+                & > .container{
+                    & > .featured-newspaper{
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            & > .footer-navigation-section{
+                & > .container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    & > .footer-navigation{
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
