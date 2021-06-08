@@ -31,6 +31,11 @@
     src: url('fonts/POPPINS-MEDIUM.TTF'); 
 }
 
+@font-face {
+    font-family: 'TwCenmtBold'; 
+    src: url('fonts/POPPINS-MEDIUM.TTF'); 
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -44,45 +49,76 @@ body{
 .scaffold{
     position: relative;
     & > .appbar{
-        position: absolute;
+        position: sticky;
         top: 0;
         width: 100%;
-        z-index: 99;
-        background: linear-gradient(rgba($color: #000, $alpha: 0.8), rgba($color: #000000, $alpha: 0));
+        z-index: 999;
+        height: 92px;
+        
+        // background: linear-gradient(rgba($color: #000, $alpha: 0.8), rgba($color: #000000, $alpha: 0));
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        height: 80px;
         align-items: center;
-        padding: 0px 32px;
         transition: 300ms;
 
         & > .leading{
+            width: 100%;
+            height: 60px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > img{
+                width: 38px;
+                height: 38px;
+            }
             & > .title{
-                font-size: 16;
-        font-family: "Sacramento";
-        color: #fff;
+                padding-top: 8px;
+                padding-left: 10px;
+                font-size: 16px;
+                font-family: "Sacramento";
+                color: #0d0d0d;
             }
         }
 
         & > .actions{
+            // height: 40px;
+            // transition: 300ms;
+            width: 100%;
+            background: white;
             > ul{
+                height: 100%;
                 display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
                 > li{
-                    padding: 12px;
+                    border: 1px solid #e1e1e1;
+                    flex: 1;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    padding: 3px 12px;
+                    margin-right: -1px;
+                    
                     list-style-type: none;
+                    transition: 400ms;
+                    &:hover{
+                        background-color: rgba($color: #bfbfbf, $alpha: 0.2);
+                        > a{
+                            color: #0d0d0d;
+                        }
+                    }
                     > a{
                         text-decoration: none;
                         font-family: "Ananda Akchyar";
-                        color: #bfbfbf;
-                        font-size: 24px;
+                        color: #ACACAC;
+                        font-size: 23px;
                         transition: 300ms;
 
                         &.active{
-                            color: #fff;
-                        }
-
-                        &:hover{
-                            color: #fff;
+                            color: #0d0d0d;
                         }
                     }
                 }
@@ -97,7 +133,7 @@ body{
                      li{
                         img{
                             width: 100%;
-                            height: 100vh;
+                            height: calc(100vh - 100px);
                             object-fit: cover;
                             object-position: center;
                         }
@@ -172,12 +208,11 @@ body{
             }
         }
 
-        & > .sanbodhan-section{
+        & > .third-section{
             background-color: white;
         }
 
         & > .thought-section{
-            background-color: white;
             padding: 32px 32px;
             & > .container{
                 & > .header{
@@ -237,8 +272,11 @@ body{
             }
         }
 
-        & > .newspaper-section{
+        & > .sansad-section{
             background-color: white;
+        }
+
+        & > .newspaper-section{
             padding: 32px 32px;
             & > .container{
                 & > .header{
@@ -324,6 +362,19 @@ body{
                             color: white;
                         }
                     }
+
+                    & > .singleNav{
+                        text-decoration: none;
+                        color: #707070;
+                        padding: 8px 0px;
+                        font-family: "PoppinsLight";
+                        font-size: 18px;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+
+                    
                 }
             }
         }
@@ -352,7 +403,7 @@ body{
                     align-items: center;
                     & > p{
                         text-align: center;
-                        font-family: "GilroyLight";
+                        font-family: "TwCenmtBold";
                         color: #707070;
                         font-size: 14px;
                     }
