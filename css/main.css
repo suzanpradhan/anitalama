@@ -160,7 +160,7 @@ body {
 }
 
 .scaffold > .body > .main-header-slider-section {
-  background-color: #B7C4CC;
+  background-color: white;
   width: 100%;
 }
 
@@ -173,12 +173,12 @@ body {
      object-position: center;
 }
 
-.scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section, .scaffold > .body .sansad-section {
+.scaffold > .body > .sahityaa-post-section, .scaffold > .body .rajnitik-jidibidi-section {
   padding: 32px 32px;
-  background-color: #B7C4CC;
+  background-color: white;
 }
 
-.scaffold > .body > .news-section > .container > .header, .scaffold > .body .sanbodhan-section > .container > .header, .scaffold > .body .third-section > .container > .header, .scaffold > .body .sansad-section > .container > .header {
+.scaffold > .body > .sahityaa-post-section > .container > .header, .scaffold > .body .rajnitik-jidibidi-section > .container > .header {
   margin: 32px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,18 +195,18 @@ body {
           align-items: center;
 }
 
-.scaffold > .body > .news-section > .container > .header > .title, .scaffold > .body .sanbodhan-section > .container > .header > .title, .scaffold > .body .third-section > .container > .header > .title, .scaffold > .body .sansad-section > .container > .header > .title {
+.scaffold > .body > .sahityaa-post-section > .container > .header > .title, .scaffold > .body .rajnitik-jidibidi-section > .container > .header > .title {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: bold;
 }
 
-.scaffold > .body > .news-section > .container > .header > .subTitle, .scaffold > .body .sanbodhan-section > .container > .header > .subTitle, .scaffold > .body .third-section > .container > .header > .subTitle, .scaffold > .body .sansad-section > .container > .header > .subTitle {
+.scaffold > .body > .sahityaa-post-section > .container > .header > .subTitle, .scaffold > .body .rajnitik-jidibidi-section > .container > .header > .subTitle {
   font-size: 16px;
   color: #707070;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news, .scaffold > .body .sanbodhan-section > .container > .featured-news, .scaffold > .body .third-section > .container > .featured-news, .scaffold > .body .sansad-section > .container > .featured-news {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,17 +216,7 @@ body {
           flex-direction: column;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row, .scaffold > .body .third-section > .container > .featured-news > .row, .scaffold > .body .sansad-section > .container > .featured-news > .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards ul li .card, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards ul li .card {
   cursor: pointer;
   overflow: hidden;
   margin: 14px 14px;
@@ -235,15 +225,14 @@ body {
   transition: 300ms;
   -webkit-box-shadow: 1px 3px 10px #d6d6d6;
           box-shadow: 1px 3px 10px #d6d6d6;
-  width: 50%;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card:hover, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card:hover {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards ul li .card:hover, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards ul li .card:hover {
   -webkit-box-shadow: 5px 5px 20px #d6d6d6;
           box-shadow: 5px 5px 20px #d6d6d6;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > img, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > img {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards ul li .card > img, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards ul li .card > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -252,14 +241,14 @@ body {
   height: 280px;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > h1, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > h1 {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards ul li .card > h1, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards ul li .card > h1 {
   margin: 20px 16px 10px 16px;
   font-style: normal;
   font-family: "GilroyLight";
   font-size: 18px;
 }
 
-.scaffold > .body > .news-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sanbodhan-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .third-section > .container > .featured-news > .row > .news-card > p, .scaffold > .body .sansad-section > .container > .featured-news > .row > .news-card > p {
+.scaffold > .body > .sahityaa-post-section > .container > .featured-cards ul li .card > p, .scaffold > .body .rajnitik-jidibidi-section > .container > .featured-cards ul li .card > p {
   height: 100px;
   margin: 10px 16px 20px 16px;
   overflow: hidden;
@@ -269,15 +258,12 @@ body {
   font-size: 14px;
 }
 
-.scaffold > .body > .third-section {
-  background-color: white;
-}
-
-.scaffold > .body > .thought-section {
+.scaffold > .body > .samajik-jidibidi-section, .scaffold > .body .bibidhi-section {
   padding: 32px 32px;
+  background-color: #B7C4CC;
 }
 
-.scaffold > .body > .thought-section > .container > .header {
+.scaffold > .body > .samajik-jidibidi-section > .container > .header, .scaffold > .body .bibidhi-section > .container > .header {
   margin: 32px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,87 +280,18 @@ body {
           align-items: center;
 }
 
-.scaffold > .body > .thought-section > .container > .header > .title {
+.scaffold > .body > .samajik-jidibidi-section > .container > .header > .title, .scaffold > .body .bibidhi-section > .container > .header > .title {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: bold;
 }
 
-.scaffold > .body > .thought-section > .container > .header > .subTitle {
+.scaffold > .body > .samajik-jidibidi-section > .container > .header > .subTitle, .scaffold > .body .bibidhi-section > .container > .header > .subTitle {
   font-size: 16px;
   color: #707070;
 }
 
-.scaffold > .body > .thought-section > .container > .featured-thought {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card {
-  cursor: pointer;
-  overflow: hidden;
-  margin: 14px 14px;
-  background-color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-box-shadow: 1px 3px 10px #d6d6d6;
-          box-shadow: 1px 3px 10px #d6d6d6;
-}
-
-.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card:hover {
-  -webkit-box-shadow: 5px 5px 20px #d6d6d6;
-          box-shadow: 5px 5px 20px #d6d6d6;
-}
-
-.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  height: 280px;
-}
-
-.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > h1 {
-  margin: 20px 16px 10px 16px;
-  font-style: normal;
-  font-family: "GilroyLight";
-  font-size: 18px;
-}
-
-.scaffold > .body > .thought-section > .container > .featured-thought > .thought-card > p {
-  height: 150px;
-  margin: 10px 16px 20px 16px;
-  overflow: hidden;
-  line-height: 24px;
-  text-overflow: ellipsis;
-  font-family: "GilroyLight";
-  font-size: 14px;
-}
-
-.scaffold > .body > .sansad-section {
-  background-color: white;
-}
-
-.scaffold > .body > .thought-section {
-  background-color: #B7C4CC;
-}
-
-.scaffold > .body > .newspaper-section {
-  background-color: #B7C4CC;
-  padding: 32px 32px;
-}
-
-.scaffold > .body > .newspaper-section > .container > .header {
-  margin: 32px 0px;
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards, .scaffold > .body .bibidhi-section > .container > .featured-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,55 +299,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.scaffold > .body > .newspaper-section > .container > .header > .title {
-  font-family: "Poppins";
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.scaffold > .body > .newspaper-section > .container > .header > .subTitle {
-  font-size: 16px;
-  color: #707070;
-}
-
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card {
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card {
   cursor: pointer;
   overflow: hidden;
   margin: 14px 14px;
   background-color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -webkit-transition: 300ms;
   transition: 300ms;
   -webkit-box-shadow: 1px 3px 10px #d6d6d6;
           box-shadow: 1px 3px 10px #d6d6d6;
 }
 
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card:hover {
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card:hover, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card:hover {
   -webkit-box-shadow: 5px 5px 20px #d6d6d6;
           box-shadow: 5px 5px 20px #d6d6d6;
 }
 
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > img {
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card > img, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -439,14 +326,14 @@ body {
   height: 280px;
 }
 
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > h1 {
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card > h1, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card > h1 {
   margin: 20px 16px 10px 16px;
   font-style: normal;
   font-family: "GilroyLight";
   font-size: 18px;
 }
 
-.scaffold > .body > .newspaper-section > .container > .featured-newspaper > .newspaper-card > p {
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card > p, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card > p {
   height: 150px;
   margin: 10px 16px 20px 16px;
   overflow: hidden;
