@@ -130,8 +130,8 @@ body {
   padding: 5px 10px;
   margin-right: -1px;
   list-style-type: none;
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
 }
 
 .scaffold > .appbar > .actions > ul > li:hover {
@@ -140,6 +140,7 @@ body {
 
 .scaffold > .appbar > .actions > ul > li:hover > a {
   color: #0d0d0d;
+  font-weight: 600;
 }
 
 .scaffold > .appbar > .actions > ul > li > a {
@@ -148,6 +149,7 @@ body {
   font-size: 15px;
   -webkit-transition: 300ms;
   transition: 300ms;
+  font-weight: 500;
   max-lines: 1;
   white-space: nowrap;
 }
@@ -158,6 +160,7 @@ body {
 }
 
 .scaffold > .body > .main-header-slider-section {
+  background-color: #B7C4CC;
   width: 100%;
 }
 
@@ -172,6 +175,7 @@ body {
 
 .scaffold > .body > .news-section, .scaffold > .body .sanbodhan-section, .scaffold > .body .third-section, .scaffold > .body .sansad-section {
   padding: 32px 32px;
+  background-color: #B7C4CC;
 }
 
 .scaffold > .body > .news-section > .container > .header, .scaffold > .body .sanbodhan-section > .container > .header, .scaffold > .body .third-section > .container > .header, .scaffold > .body .sansad-section > .container > .header {
@@ -360,7 +364,12 @@ body {
   background-color: white;
 }
 
+.scaffold > .body > .thought-section {
+  background-color: #B7C4CC;
+}
+
 .scaffold > .body > .newspaper-section {
+  background-color: #B7C4CC;
   padding: 32px 32px;
 }
 
@@ -549,6 +558,40 @@ body {
   font-family: "TwCenmtBold";
   color: #707070;
   font-size: 14px;
+}
+
+.scaffold > .body .see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scaffold > .body .see-more > button {
+  background-color: transparent;
+  border: 1px solid #0d0d0d;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.scaffold > .body .see-more > button > a {
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Poppins";
+  color: #0d0d0d;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.scaffold > .body .see-more > button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1px 5px 10px rgba(191, 191, 191, 0.7);
+          box-shadow: 1px 5px 10px rgba(191, 191, 191, 0.7);
 }
 
 @media screen and (max-width: 740px) {

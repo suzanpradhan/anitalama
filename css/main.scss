@@ -54,7 +54,6 @@ body{
         width: 100%;
         z-index: 999;
         height: 92px;
-        
         // background: linear-gradient(rgba($color: #000, $alpha: 0.8), rgba($color: #000000, $alpha: 0));
         display: flex;
         flex-direction: column;
@@ -102,27 +101,26 @@ body{
                     padding: 5px 10px;
                     margin-right: -1px;
                     list-style-type: none;
-                    transition: 400ms;
+                    transition: 500ms all;
                     &:hover{
                         background-color: rgba($color: #bfbfbf, $alpha: 0.2);
                         > a{
                             color: #0d0d0d;
+                            font-weight: 600;
                         }
                     }
                     > a{
                         text-decoration: none;
-                        // font-family: "PoppinsLight";
-                        
                         color: #8D8D8D;
                         font-size: 15px;
                         transition: 300ms;
+                        font-weight: 500;
                         max-lines: 1;
                         white-space: nowrap;
 
                         &.active{
                             color: #0d0d0d;
                             font-weight: 600;
-                            // font-family: "Poppins";
                         }
                     }
                 }
@@ -131,6 +129,7 @@ body{
     }
     & > .body{
         & > .main-header-slider-section{
+            background-color: #B7C4CC;
             width: 100%;
             & > .container{
                 .main-header-slider{
@@ -149,6 +148,7 @@ body{
 
         & > .news-section, .sanbodhan-section, .third-section, .sansad-section{
             padding: 32px 32px;
+            background-color: #B7C4CC;
             // height: 1000px;
             & > .container{
                 & > .header{
@@ -280,7 +280,12 @@ body{
             background-color: white;
         }
 
+        & > .thought-section{
+            background-color: #B7C4CC;
+        }
+
         & > .newspaper-section{
+            background-color: #B7C4CC;
             padding: 32px 32px;
             & > .container{
                 & > .header{
@@ -416,8 +421,35 @@ body{
             }
             
         }
+
+        // UNIVERSAL WIDGETS
+        & .see-more{
+            display: flex;
+            padding-top: 20px;
+            justify-content: center;
+            > button{
+                background-color: transparent;
+                border: 1px solid #0d0d0d;
+                transition: 300ms;
+                > a{
+                    padding: 0px 20px;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: "Poppins";
+                    color: #0d0d0d;
+                    transition: 300ms;
+                }
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 1px 5px 10px rgba($color: #bfbfbf, $alpha: 0.7);
+                }
+            }
+        }
     }
 }
+
+
+
 
 @media screen and (max-width: 740px) {
     .scaffold{
