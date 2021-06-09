@@ -118,7 +118,7 @@ body {
 }
 
 .scaffold > .appbar > .actions > ul > li {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #bfbfbf;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +127,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 4px 10px;
+  padding: 5px 10px;
   margin-right: -1px;
   list-style-type: none;
   -webkit-transition: 400ms;
@@ -144,9 +144,8 @@ body {
 
 .scaffold > .appbar > .actions > ul > li > a {
   text-decoration: none;
-  font-family: "Ananda Akchyar";
   color: #8D8D8D;
-  font-size: 20px;
+  font-size: 15px;
   -webkit-transition: 300ms;
   transition: 300ms;
   max-lines: 1;
@@ -155,6 +154,7 @@ body {
 
 .scaffold > .appbar > .actions > ul > li > a.active {
   color: #0d0d0d;
+  font-weight: 600;
 }
 
 .scaffold > .body > .main-header-slider-section {
@@ -163,9 +163,9 @@ body {
 
 .scaffold > .body > .main-header-slider-section > .container .main-header-slider li img {
   width: 100%;
-  height: calc(100vh - 92px);
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: calc(100vh - 92px - 32px);
+  -o-object-fit: fill;
+     object-fit: fill;
   -o-object-position: center;
      object-position: center;
 }
