@@ -178,7 +178,6 @@ body {
 }
 
 .scaffold > .body > .main-header-static-section > .container {
-  padding-top: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,8 +187,8 @@ body {
 }
 
 .scaffold > .body > .main-header-static-section > .container img {
-  width: 70%;
-  height: 400px;
+  width: 100%;
+  height: 450px;
   -o-object-fit: fill;
      object-fit: fill;
   -o-object-position: center;
