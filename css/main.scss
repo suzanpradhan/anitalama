@@ -48,6 +48,9 @@ body{
 
 .scaffold{
     position: relative;
+    & .bg-shade{
+        background-color: #B7C4CC !important;
+    }
     & > .appbar{
         position: sticky;
         top: 0;
@@ -231,9 +234,9 @@ body{
             }
         }
 
-        & > .samajik-jidibidi-section, .bibidhi-section{
+        & > .samajik-jidibidi-section, .bibidhi-section, .custom-section{
             padding: 32px 32px;
-            background-color: #B7C4CC;
+            background-color: white;
             // height: 1000px;
             & > .container{
                 & > .header{

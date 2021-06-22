@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="samajik-jidibidi-section">
+            <div class="samajik-jidibidi-section bg-shade">
                 <div class="container">
                     <div class="header">
                         <h1 class="title">सामाजिक गतिविधि</h1>
@@ -187,13 +187,60 @@
                 </div>
             </div>
 
-            <div class="bibidhi-section">
+            <div class="bibidhi-section bg-shade">
                 <div class="container">
                     <div class="header">
                         <h1 class="title">विविध</h1>
                     </div>
                     <div class="featured-cards">
                         <ul id="bibidhi-slider">
+                            <li>
+                                <div class="card">
+                                    <img src="images/1551873897.jpg" alt="">
+                                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img src="images/communityhelpers-825x413-1.jpg" alt="">
+                                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img src="images/CI_boardwalk_Sandy_sweepers_jeh.jpg" alt="">
+                                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card">
+                                    <img src="images/jhe_1_1.jpg" alt="">
+                                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="see-more">
+                        <button><a href="">सबै पढनुस</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUSTOM SECTION -->
+            <!-- bg-shade: for shade color bacground -->
+            <!-- default: white background -->
+            <div class="custom-section bg-shade">
+                <div class="container">
+                    <div class="header">
+                        <h1 class="title">CUSTOM SECTION</h1>
+                    </div>
+                    <div class="featured-cards">
+                        <!-- For item of 3 class: custom-slider-3 -->
+                        <ul class="custom-slider-3">
                             <li>
                                 <div class="card">
                                     <img src="images/1551873897.jpg" alt="">
@@ -354,7 +401,37 @@
             loop: true,
             slideEndAnimation: true,
             pause: 3000
-          });  
+          }); 
+          
+          $(".custom-slider-2").lightSlider({
+            item:2,
+            autoWidth: false,
+            pager: false,
+            mode: "slide",
+            slideMargin: 10,
+            speed: 800,
+            auto:true,
+            controls: true,
+            pauseOnHover: true,
+            loop: true,
+            slideEndAnimation: true,
+            pause: 3000
+          }); 
+
+          $(".custom-slider-3").lightSlider({
+            item:3,
+            autoWidth: false,
+            pager: false,
+            mode: "slide",
+            slideMargin: 10,
+            speed: 800,
+            auto:true,
+            controls: true,
+            pauseOnHover: true,
+            loop: true,
+            slideEndAnimation: true,
+            pause: 3000
+          }); 
         });
     </script>
     <script>
