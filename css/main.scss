@@ -1,17 +1,6 @@
 // CUSTOM RESOURCES
 
 @font-face {
-    font-family: 'Sacramento'; 
-    src: url('../fonts/SACRAMENTO-REGULAR.TTF'); 
-
-}
-
-@font-face {
-    font-family: 'Ananda Akchyar'; 
-    src: url('../fonts/ANANDA-AKCHYAR-BOLD.ttf'); 
-}
-
-@font-face {
     font-family: 'GilroyLight'; 
     src: url('../fonts/GILROY-LIGHT.OTF'); 
 }
@@ -260,6 +249,10 @@ body{
                     flex-direction: column;
                     & ul{
                         & li{
+                            & a{
+                                text-decoration: none;
+                                color: #0d0d0d;
+                            }
                             & .card{
                                 cursor: pointer;
                                 overflow: hidden;

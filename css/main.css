@@ -1,14 +1,4 @@
 @font-face {
-  font-family: 'Sacramento';
-  src: url("../fonts/SACRAMENTO-REGULAR.TTF");
-}
-
-@font-face {
-  font-family: 'Ananda Akchyar';
-  src: url("../fonts/ANANDA-AKCHYAR-BOLD.ttf");
-}
-
-@font-face {
   font-family: 'GilroyLight';
   src: url("../fonts/GILROY-LIGHT.OTF");
 }
@@ -330,6 +320,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li a, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li a, .scaffold > .body .custom-section > .container > .featured-cards ul li a {
+  text-decoration: none;
+  color: #0d0d0d;
 }
 
 .scaffold > .body > .samajik-jidibidi-section > .container > .featured-cards ul li .card, .scaffold > .body .bibidhi-section > .container > .featured-cards ul li .card, .scaffold > .body .custom-section > .container > .featured-cards ul li .card {
