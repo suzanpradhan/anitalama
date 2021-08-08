@@ -214,6 +214,26 @@
     <script>
         eva.replace()
     </script>
+    <script type="text/javascript">
+        var hideScroll = window.pageYOffset;
+
+        window.onscroll = function() {
+            
+            var currentScrollPos = window.pageYOffset;
+
+            if (hideScroll > window.pageYOffset) {
+                    document.getElementById("actionsBar").style.display = "block";
+                    
+                
+            } else {
+                    document.getElementById("actionsBar").style.display = "none";
+                    hideScroll = currentScrollPos;
+            }
+            hideScroll = currentScrollPos;
+
+            
+        }
+    </script>
     
 </body>
 

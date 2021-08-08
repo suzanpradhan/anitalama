@@ -418,8 +418,12 @@ body{
             & > .container{
                 width: 70%;
                 font-family: "Poppins";
-                iframe{
+                & iframe{
                     width: 100%;
+                }
+
+                & p{
+                    padding: 10px 0px;
                 }
             }
         }
